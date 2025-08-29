@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bus Pass </title>
+    </head>
+    <body>
+        <center><img src="/forms/header.png" alt="header"></center>
+        <form><!--action="submit.html" method="get" -->  
+            <fieldset style="margin-left: 250px; margin-right: 250px;">
+                <legend style="background-color: lightblue;">Applicant Details</legend> 
+                <table border="0" width="100%"  cellspacing="8">
+                
+                    <tr>
+                        <td><label for="name">Name <sup style="color: red;">*</sup></label></td>
+                        <td><input type="text" id="name" name="name" required maxlength="20"></td>
+                        <td><label for="fname"> Father's/Guardian's Name <sup style="color: red;">*</sup></label></td>
+                        <td><input type="text" id="fname" name="fname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth <sup style="color: red;">*</sup></label></td>
+                        <td><input type="date" id="dob" name="dob" required></td>
+                        <td><label for="gen">Gender <sup style="color: red;">*</sup></label></td>
+                        <td>
+                            <input type="radio" id="male" name="gen" value="Male" >
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gen" value="Female" >
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="w_no">WhatsApp No <sup style="color: red;">*</sup></label></td>
+                        <td><input type="tel" id="w_no" name="w_no" required></td>
+                        <td><label for="aadhaar">Aadhaar No </label></td>
+                        <td><input type="text" id="aadhaar" name="aadhaar" maxlength="12"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="photo">Photo <sup style="color: red;">*</sup></label></td>
+                        <td><input type="file" id="photo" name="photo" required></td>
+                        <td><label for="email">Email <sup style="color: red;">*</sup></label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                        
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset style="margin-left: 250px; margin-right: 250px;">
+                <legend style="background-color: lightblue;">Resdential Address Details</legend>
+                <table border="0" width="100%" cellspacing="8">
+                    <tr>
+                        <td rowspan="2" ><label for="address">Applicant <br> &nbsp Address<sup style="color: red;">*</sup></label></td>
+                        <td rowspan="2"><textarea rows="6" cols="20" name="address" id="address" required></textarea></td>
+                        <td rowspan="2"><label for="district">District<sup style="color: red;">*</sup></label></td>
+                        <td rowspan="2">
+                            <select name="district" id="district" required>
+                                <option value="select">--select--</option>
+                                <option value="kphb">KPHB</option>
+                                <option value="Kukatpally">Kukatpally</option>
+                                <option value="sr nagar">sr nagar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><label for="mandal">Mandal <sup style="color: red;">*</sup></label></td>
+                        <td><select name="mandal" required>
+                            <option name="hyd">Hyderabad</option>
+                        </select></td>
+                        <td><label for="village">Village <sup style="color: red;">*</sup></label></td>
+                        <td><select name="village" required>
+                            <option name="hyd">Hyderabad</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pincode">Pincode <sup style="color: red;">*</sup></label></td>
+                        <td><input type="text" id="pincode" name="pincode" required></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset style="margin-left: 250px; margin-right: 250px;">
+                <legend style="background-color: lightblue;">Pass Type Details</legend>
+                <table border="0" width="100%" cellspacing="8">
+                    <tr>
+                        <td><label for="city">City<sup style="color: red;">*</sup></label></td>
+                        <td><select name="city">
+                            <option name="hyd">Hyderabad</option>
+                        </select></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="type">Pass Type<sup style="color: red;">*</sup></label></td>
+                        <td><select name="passtype" id="passtype" required>
+                            <option value="select">--select--</option>
+                            <option value="Greater pass">Greater pass</option>
+                            <option value="General ordinary Route Pass">General ordinary Route Pass</option>
+                            <option value="General Metro express Route pass">General Metro express Route pass</option>
+                            <option value="ordinary Pass">ordinary Pass</option>
+                            <option value="Metro Express Pass">Metro Express Pass</option>
+                            <option value="Metro Deluxe Pass">Metro Deluxe Pass</option>
+                        </select></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset style="margin-left: 250px; margin-right: 250px;">
+                <legend style="background-color: lightblue;">Mode of Payment & Pass Collection</legend>
+                <table border="0" width="100%" cellspacing="8">
+                    <tr>
+                        <td><label>Payment Mode<sup style="color: red;">*</sup></label></td>
+                        <td><select name="Payment mode" id="Payment mode" required>
+                            <option value="--select--">Select Payment Mode</option>
+                            <option value="Payment at Counter">Payment at Counter</option>
+                        </select></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label>Pass Delivery Mode<sup style="color: red;">*</sup></label></td>
+                        <td><select name="Delivery mode" id="Delivery mode" required>
+                            <option value="select">Select Pass Delivery Mode </option>
+                            <option value="at Counter">At Counter</option>
+                        </select></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label>Center at which you want to collect pass <sup style="color: red;">*</sup></label></td>
+                        <td><select name="collect" id="collect" required>
+                            <option value="select">Select center </option>
+                            <option value="kphb">KPHB</option>
+                            <option value="kukatpally">kukatpally</option>
+                        </select></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <br>
+        <center>
+            <img src="/forms/captcha.png" alt="captcha">
+            <br>
+            <input type="submit">
+        </center>
+    </body>
+</html>
